@@ -9,8 +9,8 @@ export const ROUTES = {
 
   // NOTE: all 생각해보자
   STORE_REVIEWS_PAGE: "/store/[storeId]/review/all",
-  STORE_IMAGE_REVIEWS_PAGE: "/store/[storeId]/reviews/images",
-  STORE_IMAGE_REVIEW_ITEM_PAGE: "/store/[storeId]/reviews/images/[imageId]",
+  STORE_IMAGE_REVIEWS_PAGE: "/store/[storeId]/review/all/images",
+  STORE_IMAGE_REVIEW_ITEM_PAGE: "/store/[storeId]/review/all/images/[imageId]",
 
   STORE_REVIEWS_FORM: "/store/[storeId]/review/form",
 
