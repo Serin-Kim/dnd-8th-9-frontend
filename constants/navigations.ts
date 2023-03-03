@@ -51,7 +51,7 @@ export const NAVIGATION_HEADER: INavigationHeader = {
   },
   [ROUTES.STORE_IMAGE_REVIEW_ITEM_PAGE]: {
     title: "",
-    icon: false,
+    icon: true,
     bgColor: "black",
     iconColor: "white",
   },
