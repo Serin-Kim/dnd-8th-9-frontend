@@ -1,4 +1,4 @@
-import { IImage, ILink, TCategory, TKeyValue } from "./shared";
+import { IImage, IOrderForm, ILink, TCategory, TKeyValue } from "./shared";
 
 export interface IStore {
   id: number;
@@ -12,7 +12,7 @@ export interface IStore {
   priceRange: { max: number; min: number };
   averageReservationNeededTime: number;
   links: ILink[];
-  orderForm: string;
+  orderForm: IOrderForm[];
   storeImages: IImage[];
   notice: {
     packaging: { name: string; value: string[] }[];
