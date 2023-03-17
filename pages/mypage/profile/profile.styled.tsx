@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  /* border: 1px solid red; */
   margin-top: 6rem;
   padding: 0 1.6rem;
 `;
@@ -36,9 +35,16 @@ export const Input = styled.div`
   padding: 0.8rem 1.2rem;
   height: 3.9rem;
 
-  border-bottom: 1px solid ${({ theme }) => theme.colors.grey[400]};
+  &.clicked {
+    border-bottom: 1px solid ${({ theme }) => theme.colors.blue[800]};
+  }
+
+  &.notClicked {
+    border-bottom: 1px solid ${({ theme }) => theme.colors.grey[400]};
+  }
 
   display: flex;
+  justify-content: space-between;
 
   input {
     font-weight: 500;

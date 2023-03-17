@@ -15,7 +15,12 @@ interface UserState {
 
 interface UserActionState {
   loginUser: (userName: string, profileImage: string, email?: string, phoneNumber?: string) => void;
-  logoutUser: () => void;
+  editUser: (
+    userName?: string,
+    profileImage?: string,
+    email?: string,
+    phoneNumber?: string,
+  ) => void;
   toggleDoneOnboard: () => void;
 }
 
@@ -44,6 +49,23 @@ const useUserStore = create<UserState & UserActionState>()(
           }
         });
       },
+      editUser: (userName, profileImage, email, phoneNumber) => {
+        set(state => {
+          if (userName) {
+            state.userName = userName;
+          }
+          if (profileImage) {
+            state.profileImage = profileImage;
+          }
+          if (email) {
+            state.email = email;
+          }
+          if (phoneNumber) {
+            state.phoneNumber = phoneNumber;
+          }
+        });
+      },
+
       logoutUser: () => {
         set(initialState);
       },
