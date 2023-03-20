@@ -39,5 +39,9 @@ export const ROUTES = {
   MYPAGE_SETTINGS: "/mypage/settings",
   MYPAGE_NOTICE: "/mypage/notice",
 
+  MYPAGE_SETTINGS_FAQ: "/mypage/settings/faq",
+  MYPAGE_SETTINGS_ASK: "/mypage/settings/ask",
+  MYPAGE_SETTINGS_TERMSOFUSE: "/mypage/settings/termsofuse",
+
   REVIEW_WRITE_PAGE: "/review",
 };

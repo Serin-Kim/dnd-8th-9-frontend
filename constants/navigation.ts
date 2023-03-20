@@ -155,6 +155,7 @@ export const ROUTES_NAV: IRouteNav = {
     nav: { previous: true, text: "공지사항" },
     auth: true,
   },
+
   [ROUTES.ONBOARD_WELCOME]: {
     auth: true,
   },
